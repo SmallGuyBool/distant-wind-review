@@ -5,7 +5,7 @@
 @layer components {
 
     .sidebar-item {
-        @apply hover:cursor-pointer hover:text-gray-300 mt-2 mb-2;
+        @apply hover:cursor-pointer hover:text-gray-300 mt-2 mb-2 transition-all;
     }
 
 }
