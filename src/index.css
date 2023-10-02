@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    .sidebar-item {
+        @apply hover:cursor-pointer hover:text-gray-300 mt-2 mb-2;
+    }
+
+}
