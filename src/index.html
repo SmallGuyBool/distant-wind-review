@@ -6,31 +6,51 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>NAME</title>
 </head>
-<body class="bg-slate-800">
-    <div class="flex">
-        <div class="fixed shadow-lg">
+<body class="bg-slate-800 overflow-x-hidden scrollbar-track-slate-500 scrollbar-thumb-slate-900">
+    <div class="flex flex-shrink-0">
+        <div class="fixed shadow-lg flex-shrink-0">
             <div class="flex flex-col h-screen w-64 bg-gray-700">
 
                 <!-- This is a placeholder for the website logo -->
-                <div class="h-10 w-max bg-white">
-                    
+                <div class="h-20 w-64 bg-white z-10">
+                    LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO
                 </div>
 
                 <ul class="text-white text-left ml-10 text-2xl pt-10 font-thin">
-                    <li class="sidebar-item">- Home</li>
-                    <li class="sidebar-item">- About Us</li>
-                    <li class="sidebar-item">- Sources</li>
-                    <li class="sidebar-item">- More</li>
+                    <li class="sidebar-item">
+                        <h3>- Home</h3>
+                        
+                    </li>
+                    <li class="sidebar-item">
+                        <h3>- About Us</h3>
+                        <ul style="transition: height ease 0.2s;">
+                            <li>Name 1</li>
+                            <li>Name 2</li>
+                            <li>Name 3</li>
+                            <li>Name 4</li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <h3>- Sources</h3>
+                        <ul style="transition: height ease 0.2s;">
+                            <li>Source 1</li>
+                            <li>Source 2</li>
+                            <li>Source 3</li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <h3>- More</h3>
+                    </li>
                 </ul>
             </div>
         </div>
         <!-- Empty div to transform main content to the right -->
-        <div class="w-64 mr-10"></div>
-        <div class="h-screen text-white w-screen ml-16 flex flex-col">
+        <div class="w-64 flex-shrink-0"></div>
+        <div class="h-screen text-white w-screen ml-16 flex flex-col flex-shrink-0">
             <h1 class="text-left font-extrabold text-5xl mt-16 text-white">
                 Animal Crossing New Horizons - A Review
             </h1>
-            <h2 class="mt-4 mb-4 text-xl">Review tagline</h2>
+            <h2 class="mt-4 mb-4 text-xl">A perfect microcosm in a quarantined world.</h2>
             <div id="image-container">
                 <img src="/imgs/acnh main.jpg" class="w-800">
             </div>
@@ -41,7 +61,23 @@
                 test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
                 test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
             </div>
+            <hr class="mt-16 w-1/2 border-2 bg-gray-600 border-gray-600">
+            <div class="paragraph mt-16">
+                test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+                test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+                test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+                test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+                test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+            </div>
+            <hr class="mt-16 mb-16 w-1/2 border-2 bg-gray-600 border-gray-600">
+            <!-- Comment Section -->
+            <h1 class="text-3xl">Comments <span class="text-slate-400 text-xl">15 comments</span></h1>
+                <h2 class="text-slate-400 mt-2">Sort By <strong>Best</strong> &#8615;</h2>
+            <div class="mt-16">
+                <div class="comment"><img>Hello</div>
+            </div>
         </div>
     </div>
+    <script src="/src/index.js"></script>
 </body>
 </html>

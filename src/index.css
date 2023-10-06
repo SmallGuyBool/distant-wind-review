@@ -4,12 +4,33 @@
 
 @layer components {
 
-    .sidebar-item {
+    .sidebar-item h3 {
         @apply hover:cursor-pointer hover:text-gray-500 mt-2 mb-2 transition-all;
     }
 
+    .sidebar-item li {
+        @apply text-lg;
+    }
+
+    .sidebar-item ul {
+        @apply font-normal bg-slate-300 pl-5 -translate-x-10 w-64
+        text-black invisible h-0 shadow-lg;
+    }
+
+    .sidebar-item:hover > ul {
+        @apply visible h-32;
+    }
+
     .paragraph {
-        @apply text-white w-2/3 text-lg
+        @apply text-white w-600 text-lg;
+    }
+
+    .comment {
+        @apply w-5/6 text-lg text-gray-200;
+    }
+
+    .comment img {
+        @apply w-8;
     }
 
 }

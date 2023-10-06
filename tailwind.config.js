@@ -6,10 +6,13 @@ module.exports = {
     extend: {
         width: {
             '800': '800px',
+            '600': '600px',
         },
         
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 
