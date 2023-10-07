@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
     <title>NAME</title>
 </head>
-<body class="bg-slate-800 overflow-x-hidden scrollbar-track-slate-500 scrollbar-thumb-slate-900">
+<body class="bg-slate-800 overflow-x-clip scrollbar-track-slate-500 scrollbar-thumb-slate-900">
     <div class="flex flex-shrink-0">
-        <div class="fixed shadow-lg flex-shrink-0">
-            <div class="flex flex-col h-screen w-64 bg-gray-700">
+        <div class="hidden md:block fixed drop-shadow-2xl flex-shrink-0">
+            <div class=" h-screen w-0 hidden md:flex flex-col md:w-64 bg-gray-700">
 
                 <!-- This is a placeholder for the website logo -->
                 <div class="h-20 w-64 bg-white z-10">
@@ -17,22 +17,21 @@
                 </div>
 
                 <ul class="text-white text-left ml-10 text-2xl pt-10 font-thin">
-                    <li class="sidebar-item">
+                    <li class="sidebar-item" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
                         <h3>- Home</h3>
-                        
                     </li>
                     <li class="sidebar-item">
-                        <h3>- About Us</h3>
-                        <ul style="transition: height ease 0.2s;">
-                            <li>Name 1</li>
-                            <li>Name 2</li>
-                            <li>Name 3</li>
-                            <li>Name 4</li>
+                        <h3>- Our Team</h3>
+                        <ul style="transition: height ease 0.1s;">
+                            <li>Anandi</li>
+                            <li>Anna</li>
+                            <li>Josh</li>
+                            <li>Julian</li>
                         </ul>
                     </li>
                     <li class="sidebar-item">
                         <h3>- Sources</h3>
-                        <ul style="transition: height ease 0.2s;">
+                        <ul style="transition: height ease 0.1s;">
                             <li>Source 1</li>
                             <li>Source 2</li>
                             <li>Source 3</li>
@@ -42,17 +41,19 @@
                         <h3>- More</h3>
                     </li>
                 </ul>
+                <h3 class="absolute bottom-0 ml-14 text-white font-light text-sm">CCDP10003 @ UniMelb</h3>
             </div>
         </div>
         <!-- Empty div to transform main content to the right -->
-        <div class="w-64 flex-shrink-0"></div>
+        <div class="w-0 md:w-64 flex-shrink-0 "></div>
         <div class="h-screen text-white w-screen ml-16 flex flex-col flex-shrink-0">
-            <h1 class="text-left font-extrabold text-5xl mt-16 text-white">
+            <a class="mt-10 mb-4 underline hover:text-slate-300" href="https://www.nintendo.com.au/games/nintendo-switch/animal-crossing-new-horizons">Animal Crossing: New Horizons</a>
+            <h1 class="text-left font-extrabold text-5xl  text-white">
                 Animal Crossing New Horizons - A Review
             </h1>
             <h2 class="mt-4 mb-4 text-xl">A perfect microcosm in a quarantined world.</h2>
             <div id="image-container">
-                <img src="/acnh main.jpg" class="w-800">
+                <img src="/imgs/acnh main.jpg" class="w-800">
             </div>
             <div class="paragraph mt-16">
                 test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
@@ -70,14 +71,53 @@
                 test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
             </div>
             <hr class="mt-16 mb-16 w-1/2 border-2 bg-gray-600 border-gray-600">
+
             <!-- Comment Section -->
             <h1 class="text-3xl">Comments <span class="text-slate-400 text-xl">15 comments</span></h1>
                 <h2 class="text-slate-400 mt-2">Sort By <strong>Best</strong> &#8615;</h2>
-            <div class="mt-16">
-                <div class="comment"><img>Hello</div>
+            <div class="mt-8">
+
+                <div class="comment">
+                    <img src="/imgs/pfp1.png">
+                    <div>
+                        <h3>Commenter1</h3> 
+                        <p>
+                            This is cool! fsd
+                            fs  
+                            fddfsdsf  fds sdf sdf s dfsd df ssd fsd sd dsfg fd sg sdf gds fg dsg   dfs gdsf g dfsg fdg dfsg fdg
+                            gfdfsdgsfdg gfd fdgs fdg dfg dfgssfgdgfsdgfd f
+                        </p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="/imgs/pfp1.png">
+                    <div>
+                        <h3>Commenter1</h3> 
+                        <p>
+                            This is cool! fsd
+                            fs  
+                            fddfsdsf  fds sdf sdf s dfsd df ssd fsd sd dsfg fd sg sdf gds fg dsg   dfs gdsf g dfsg fdg dfsg fdg
+                            gfdfsdgsfdg gfd fdgs fdg dfg dfgssfgdgfsdgfd f
+                        </p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="/imgs/pfp1.png">
+                    <div>
+                        <h3>Commenter1</h3> 
+                        <p>
+                            This is cool! fsd
+                            fs  
+                            fddfsdsf  fds sdf sdf s dfsd df ssd fsd sd dsfg fd sg sdf gds fg dsg   dfs gdsf g dfsg fdg dfsg fdg
+                            gfdfsdgsfdg gfd fdgs fdg dfg dfgssfgdgfsdgfd f
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
-    <script src="/index.js"></script>
+    <script src="/src/index.js"></script>
 </body>
 </html>
