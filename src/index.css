@@ -42,5 +42,12 @@
         @apply max-w-none;
     }
 
+    .reply-container {
+        @apply flex flex-row
+    }
+
+    .reply {
+        @apply comment;
+    }
 
 }
