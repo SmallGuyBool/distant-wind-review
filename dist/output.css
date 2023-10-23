@@ -675,8 +675,20 @@ video {
   bottom: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.float-right {
+  float: right;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mb-16 {
@@ -805,6 +817,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-x-clip {
